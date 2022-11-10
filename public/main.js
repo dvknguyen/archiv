@@ -21,6 +21,10 @@ const createWindow = () => {
   // mainWindow.webContents.openDevTools()
 }
 
+// only for tests, NOT production!!
+app.commandLine.appendSwitch('--no-sandbox')
+
+
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
@@ -35,8 +39,6 @@ app.whenReady().then(() => {
   })
 })
 
-// only for tests, NOT production!!
-app.commandLine.appendSwitch('--no-sandbox')
 
 // Quit when all windows are closed, except on macOS. There, it's common
 // for applications and their menu bar to stay active until the user quits
