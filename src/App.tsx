@@ -1,10 +1,11 @@
-import './App.css';
-import React from 'react';
+import "./App.css";
+import React from "react";
+import Menubar from "./component/Symbolbar";
 
 function App() {
   return (
-    <div className="App" id='root'>
-     hello Duy
+    <div className="App" id="root">
+      <Menubar></Menubar>
     </div>
   );
 }
